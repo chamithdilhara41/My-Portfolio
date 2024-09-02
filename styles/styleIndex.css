@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Itim&family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bakbak+One&family=Itim&family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bakbak+One&family=IM+Fell+Great+Primer+SC&family=Itim&family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bakbak+One&family=IM+Fell+Great+Primer+SC&family=Itim&family=Junge&family=Kaushan+Script&display=swap');
+
+body{
+    background-color: white;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+}
+
+header>nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header>nav>div:first-child>a>img{
+    width: 150px;   /* Converted from 150px = 7.8125vw */
+    height: 30px;  /* Converted from 30px = 2.7778vh*/
+}
+
+header>nav>div:nth-child(2)>ul>li{
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+
+}
+header>nav>div:nth-child(2)>ul>li>a{
+    font-family: 'Itim', cursive;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 23px;
+    line-height: 38px;
+    text-decoration: none;
+    margin: 0 2px;
+    color: #FFFFFF;
+}
+header>nav>div:nth-child(2)>ul>li>a:hover{
+    color: #08ba17;
+}
+
+#Home {
+    margin-top: 200px;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+#Home section:nth-child(1){
+    position: relative;
+    text-align: right;
+    left: 30vh;
+    bottom: 14vh;
+}
+#Home section:nth-child(1)>div>h1{
+    font-family: "Bakbak One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 70px;
+    color: #08ba17;
+}
+#Home section:nth-child(1)>div>h2{
+    font-family: "IM Fell Great Primer SC", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    color: black;
+}
+#Home section:nth-child(1)>div>h3{
+    font-family: "Kaushan Script", cursive;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    color: black;
+}
+#Home img{
+    position: relative;
+    width: 28%;
+    height: 60%;
+    left: 35vh;
+    border-radius: 10%;
+}
+#Home section:nth-child(2)>h3{
+    background-color: #08ba17;
+}
+#Home section:nth-child(2)>div>article{
+
+}
+
+
+
+
+
+
+/*
+#Home nav>button{
+    position: relative;
+    bottom: 0;
+}*/
+
