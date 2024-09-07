@@ -4,9 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bakbak+One&family=Itim&family=Junge&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bakbak+One&family=IM+Fell+Great+Primer+SC&family=Itim&family=Junge&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bakbak+One&family=IM+Fell+Great+Primer+SC&family=Itim&family=Junge&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap');
 
 body{
     background-color: white;
+    overflow-x: hidden;
 }
 header{
     position: fixed;
@@ -47,32 +49,38 @@ header>nav>div:nth-child(2)>ul>li>a:hover{
 }
 
 #Home {
-    margin-top: 200px;
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 #Home section:nth-child(1){
-    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: start;
     text-align: right;
-    left: 30vh;
-    bottom: 14vh;
+
 }
-#Home section:nth-child(1)>div>h1{
+#Home section:nth-child(1)>div:first-child>h1{
     font-family: "Bakbak One", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 70px;
+    margin: 0px;
+    padding: 0px;
     color: #08ba17;
 }
-#Home section:nth-child(1)>div>h2{
+#Home section:nth-child(1)>div:first-child>h2{
     font-family: "IM Fell Great Primer SC", serif;
     font-weight: bold;
     font-style: normal;
     font-size: 50px;
     color: black;
 }
-#Home section:nth-child(1)>div>h3{
+#Home section:nth-child(1)>div:first-child>h3{
     font-family: "Kaushan Script", cursive;
     font-weight: bold;
     margin: 0;
@@ -80,28 +88,137 @@ header>nav>div:nth-child(2)>ul>li>a:hover{
     font-size: 35px;
     color: black;
 }
+/*#Home section:nth-child(1)>div:nth-child(2)>img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}*/
+#Home section:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #Home img{
-    position: relative;
-    width: 28%;
-    height: 60%;
-    left: 35vh;
-    border-radius: 10%;
+    width: 450px;
+    height: 570px;
+    border-radius: 50px;
+    align-items: center;
 }
 #Home section:nth-child(2)>h3{
     background-color: #08ba17;
 }
-#Home section:nth-child(2)>div>article{
-
+#Home section:nth-child(3)>div>h3:first-child{
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+#Home section:nth-child(3)>div>h3:nth-child(2){
+    font-size: 36px;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: #08ba17;
+}
+#Home section:nth-child(3)>div>article{
+    width: 350px;
+    height: 200px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    /*color: ;*/
+}
+#Home section:nth-child(3)>div>h2{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    text-align: left;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    /*color: ;*/
+}
+#Home section:nth-child(3)>div>h3:last-child{
+    font-family: "Kaushan Script", cursive;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    font-size: 45px;
+    margin: 0px;
+    color:#08ba17 ;
+}
+body > nav {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+body>nav>button{
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    padding: 15px 25px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 40px; /* Round corners */
+    font-family: 'Comic Sans MS', sans-serif; /* Font style */
+    font-size: 15px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.5s ease; /* Smooth transition */
 }
 
+body>nav>button:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+#About {
+    position: relative;
+}
+
+#About h2 {
+    position: absolute;
+    font-size: 2.25em;
+    font-family: 'Itim', cursive;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 3.7em;
+}
+#About #AboutSec1>img{
+    margin-top: 7em;
+    width: 450px;
+    height: 550px;
+    border-radius: 2em;
+    margin-left: 8em;
+}
+#About>#AboutSec2>p{
+    position: absolute;
+}
+#About>#AboutSec2>p:nth-child(1){
 
 
+    position: absolute;
+    left: 60em;
 
+    top: 2em;
 
+    width: 500px;
+}
+#About>#AboutSec2>p:nth-child(2){
+
+    position: absolute;
+    left: 60em;
+    top: 3em;
+       width: 500px;
+}
 
 /*
 #Home nav>button{
     position: relative;
     bottom: 0;
 }*/
+
 
