@@ -9,11 +9,17 @@
 
     <link rel="stylesheet" href="./styles/normalize.css">
 
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- image ek tab ekata watena -->
-    <link rel="icon" type="image/x-icon" href="" >
+    <link rel="icon" type="image/x-icon" href="assets/images/img.png">
 
     <!-- css applying link -->
     <link rel="stylesheet" href="./styles/styleIndex.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Dilhara C. Portfolio </title>
 </head>
@@ -40,9 +46,9 @@
 </header>
 
 <!-- Home Section -->
-    <main id="Home">
+    <main id="Home" >
         <section>
-            <div>
+            <div data-aos="zoom-in">
                 <h1>Welcome</h1>
                 <h2>To</h2>
                 <h3>My Portfolio ....</h3>
@@ -56,7 +62,7 @@
         </section>
         <section>
             <div>
-                <h3>Hey It's Me</h3>
+                <h3 class="animate__jello">Hey It's Me</h3>
                 <h3>Chamith Dilhara</h3>
                 <article>
                     I am a passionate software engineering student,
@@ -103,35 +109,35 @@
     <hr>
 
     <!-- Education Section -->
-    <main>
-        <h2 id="education">Education</h2>
-        <section>
+    <main id="Education">
+        <h2>Education</h2>
+        <section id="ol">
             <div>
-                <h3>Ordinary</h3> <h3>Level</h3>
+                <h3>Ordinary Level</h3>
                 <article>
                     I successfully passed all subjects in my O/L examinations also i studied Ananda Central Collage in Elpitiya.
                 </article>
             </div>
         </section>
-        <section>
+        <section id="al">
             <div>
-                <h3>Advanced</h3> <h3>Level</h3>
+                <h3>Advanced Level</h3>
                 <article>
                     Although I initially faced a challenge in my Advanced Level exams, failing in my first attempt, I persevered and passed on my second attempt with the following grades: S in Combined Maths, C in Physics, and C in ICT.
                 </article>
             </div>
         </section>
-        <section>
+        <section id="he">
             <div>
-                <h3>Higher</h3> <h3>Education</h3>
+                <h3>Higher Education</h3>
                 <article>
                     I enrolled in the Institute of Software Engineering (IJSE) to pursue my degree and am committed to making the most of my career in this field.
                 </article>
             </div>
         </section>
-        <section>
+        <section id="other">
             <div>
-                <h3>Other</h3> <h3>qualifications</h3>
+                <h3>Other qualifications</h3>
                 <article>
                     I have completed an English course and earned a certificate.
                 </article>
@@ -142,29 +148,29 @@
     <hr>
 
     <!-- Skill Section -->
-    <main>
-        <h2 id="skills">Skills</h2>
+    <main id="Skills">
+        <h2>Skills</h2>
         <section>
-            <h2>Languages</h2>
+            <h3>Languages</h3>
             <div>
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
+                <img src="assets/images/img_1.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_2.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_3.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_4.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_5.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_6.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_7.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_8.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_9.png" title="myImage" alt="My-image">
             </div>
         </section>
         <section>
-            <h2>Tools</h2>
+            <h3>Tools</h3>
             <div>
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
-                <img src="" title="myImage" alt="My-image">
+                <img src="assets/images/img_10.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_11.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_12.png" title="myImage" alt="My-image">
+                <img src="assets/images/img_13.png" title="myImage" alt="My-image">
             </div>
         </section>
     </main>
@@ -172,13 +178,12 @@
     <hr>
 
     <!-- Services Section -->
-    <main>
-        <h2 id="services">Services</h2>
+    <main id="Services">
+        <h2>Services</h2>
         <section>
-            <button> < </button>
-            <div id="webDevCard">
-                <img src="" title="Web-development" alt="webDevLogo">
-                <h2>Web Development</h2>
+            <div class="item">
+                <img src="assets/images/webdevlogo.png" title="Web-development" alt="webDevLogo">
+                <h3>Web Development</h3>
                 <p>
                     Web development involves creating and maintaining websites and web applications.
                     It includes front-end development with HTML, CSS, and JavaScript, and back-end development with server-side languages like Python, Ruby, PHP, Java, and Node.js, and databases like MySQL and MongoDB.
@@ -186,29 +191,28 @@
                     It also involves web design (UI/UX), deployment and hosting (AWS, Google Cloud), version control (Git), and web security.
                 </p>
             </div>
-            <div id="UI-UX-DesignCard">
+
+            <div class="item">
                 <img src="" title="UI/UX-Design" alt="UI-UX-DesignLogo">
-                <h2>UI/UX Design</h2>
+                <h3>UI/UX Design</h3>
                 <p>
-
-                </p>
+                    UI/UX design focuses on creating intuitive and visually appealing interfaces for digital products. It involves user interface (UI) design with tools like Figma, Sketch, and Adobe XD, ensuring smooth navigation and aesthetic appeal. UX design enhances the overall user experience through research, wireframes, and usability testing, aiming to create products that are efficient, functional, and easy to use. This field covers both the look and feel (UI) and the flow and interaction (UX) of websites and applications.                </p>
             </div>
-            <div id="standaloneAppCard">
+
+            <div class="item">
                 <img src="" title="Standalone-Application-Development" alt="standaloneAppLogo">
-                <h2>Standalone Application Development</h2>
+                <h3>Standalone Application Development</h3>
                 <p>
-
-                </p>
+                    Standalone application development creates software that runs independently on a computer without needing an internet connection. These apps are built with languages like Java, C++, or Python, and are used on desktop environments for tasks ranging from productivity to entertainment. They emphasize performance and ease of use.                </p>
             </div>
-            <button> > </button>
         </section>
     </main>
 
     <hr>
 
     <!-- Works Section -->
-    <main>
-        <h2 id="works">Works</h2>
+    <main id="Works">
+        <h2>Works</h2>
         <!-- Assignment Section -->
         <section>
             <div>
@@ -270,8 +274,8 @@
     <hr>
 
     <!-- Contact Section -->
-    <main>
-        <h2 id="contact">Contact</h2>
+    <main id="Contact">
+        <h2>Contact</h2>
         <section>
             <form action="" method="post">
                 <div>
@@ -305,7 +309,8 @@
     <hr>
 
     <!-- Gallery Section -->
-    <main>
+    <main id="Gallery">
+        <h2>Gallery</h2>
         <section>
             <div>
                 <img src="" alt="photo1">
@@ -320,7 +325,15 @@
                 <img src="" alt="photo10">
             </div>
         </section>
+    </main>
 
-</main>
+<footer>
+    <p>Copyright @ dilhara C. - All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
