@@ -7,6 +7,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+@keyframes appear {
+    from{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+div {
+    animation: appear linear 1s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 body{
     background-color: black;
     overflow-x: hidden;
@@ -566,7 +583,7 @@ body>nav>button:hover {
 #Contact #find>div:nth-child(2){
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 10px;
+    row-gap: 40px;
     justify-items: center;
     align-items: center;
     img{
@@ -576,8 +593,86 @@ body>nav>button:hover {
     }
     img:hover{
         transform: scale(1.2);
+        cursor: pointer;
     }
 }
+#Contact .seeGallery{
+    position: relative;
+    left: 43em;
+    background-color: #000;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+/* Gallery Styles*/
+
+#Gallery {
+    position: relative;
+}
+#Gallery h2{
+    position: relative;
+    font-size: 2.25em;
+    font-family: 'Itim', cursive;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 3.7em;
+}
+#Gallery section{
+    display: grid;
+    justify-content: center;
+}
+#Gallery section>img:nth-child(1){
+    position: relative;
+    width: 25%;
+    left: 12%;
+}
+#Gallery section>img:nth-child(2){
+    position: relative;
+    width: 25%;
+    left: 12%;
+}
+#Gallery section>img:nth-child(3){
+    position: absolute;
+    width: 15%;
+    left: 37%;
+}
+#Gallery section>img:nth-child(4){
+    position: absolute;
+    width: 35.5%;
+    left: 52%;
+}
+#Gallery section>img:nth-child(5){
+    position: absolute;
+    height: 40%;
+    top: 49%;
+    left: 37%;
+}
+
+#Gallery section>img:nth-child(6){
+    position: absolute;
+    height: 40%;
+    top: 49%;
+    left: 71.5%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    p{
+        font-size: 1.5em;
+    }
+}
+
+
+
+
 
 
 
