@@ -9,15 +9,14 @@
 
     <link rel="stylesheet" href="./styles/normalize.css">
 
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- image ek tab ekata watena -->
     <link rel="icon" type="image/x-icon" href="assets/images/img.png">
 
     <!-- css applying link -->
     <link rel="stylesheet" href="./styles/styleIndex.css">
+
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -61,7 +60,7 @@
             <img src="assets/images/Myimage.jpg" title="myImage" alt="My-image" >
         </section>
         <section>
-            <div>
+            <div data-aos="zoom-in">
                 <h3 class="animate__jello">Hey It's Me</h3>
                 <h3>Chamith Dilhara</h3>
                 <article>
@@ -85,10 +84,10 @@
 <!-- About Section -->
     <main id="About">
         <h2>About</h2>
-        <section id="AboutSec1">
+        <section data-aos="zoom-out-up" data-aos-duration="5000" id="AboutSec1">
             <img src="assets/images/aboutImg.png" title="aboutImage" alt="aboutImage">
         </section>
-        <section id="AboutSec2">
+        <section data-aos="zoom-out-down" data-aos-duration="5000" id="AboutSec2">
             <p>Hello!</p>
             <p>I'm Chamith Dilhara,
                 currently a student at IJSE,
@@ -120,7 +119,7 @@
             <div id="line4"></div>
 
         <section id="ol">
-            <div>
+            <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
                 <h3>Ordinary Level</h3>
                 <article>
                     I successfully passed all subjects in my O/L examinations also i studied Ananda Central Collage in Elpitiya.
@@ -128,7 +127,7 @@
             </div>
         </section>
         <section id="al">
-            <div>
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
                 <h3>Advanced Level</h3>
                 <article>
                     Although I initially faced a challenge in my Advanced Level exams, failing in my first attempt, I persevered and passed on my second attempt with the following grades: S in Combined Maths, C in Physics, and C in ICT.
@@ -136,7 +135,7 @@
             </div>
         </section>
         <section id="he">
-            <div>
+            <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
                 <h3>Higher Education</h3>
                 <article>
                     I enrolled in the Institute of Software Engineering (IJSE) to pursue my degree and am committed to making the most of my career in this field.
@@ -144,7 +143,7 @@
             </div>
         </section>
         <section id="other">
-            <div>
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
                 <h3>Other qualifications</h3>
                 <article>
                     I have completed an English course and earned a certificate.
@@ -216,74 +215,98 @@
         </section>
     </main>
 
-
-
     <!-- Works Section -->
     <main id="Works">
         <h3>Works</h3>
 
         <!-- Project Section -->
-        <section>
-            <h2>Projects</h2>
-            <div>
-                <img src="" title="Pro1" alt="project01">
-                <h2>Project 01</h2>
-                <p>
-                    Creating a calculator design and functionalities for a working app involves several steps.
-                    Goal: Create a functional and user-friendly calculator app that can be used by anyone.
-                </p>
+        <section id="Projects">
+            <h4>Projects</h4>
+            <div data-aos="fade-right" class="card">
+                <div class="card-content">
+                    <h5>Project 01</h5>
+                    <p>Creating a calculator design and functionalities for a working app involves several steps.
+                        Goal: Create a functional and user-friendly calculator app that can be used by anyone.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Image">
+                </div>
             </div>
-            <div>
-                <img src="" title="Pro2" alt="project02">
-                <h2>Project 02</h2>
-                <p>
-                    Creating a calculator design and functionalities for a working app involves several steps.
-                    Goal: Create a functional and user-friendly calculator app that can be used by anyone.
-                </p>
+            <div data-aos="fade-left" class="card">
+                <div class="card-content">
+                    <h5>Project 02</h5>
+                    <p>Creating a calculator design and functionalities for a working app involves several steps.
+                        Goal: Create a functional and user-friendly calculator app that can be used by anyone.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Image">
+                </div>
             </div>
-            <div>
-                <img src="" title="Pro3" alt="project03">
-                <h2>Project 03</h2>
-                <p>
-                    Creating a calculator design and functionalities for a working app involves several steps.
-                    Goal: Create a functional and user-friendly calculator app that can be used by anyone.
-                </p>
+            <div data-aos="fade-right" class="card">
+                <div class="card-content">
+                    <h5>Project 03</h5>
+                    <p>Creating a calculator design and functionalities for a working app involves several steps.
+                        Goal: Create a functional and user-friendly calculator app that can be used by anyone.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Image">
+                </div>
             </div>
+
         </section>
 
         <!-- Assignment Section -->
-        <section>
-            <h2>Assignments</h2>
-            <div>
-                <img src="" title="Ass1" alt="assignment01">
-                <h2>Assignment 01</h2>
-                <p>
-                    Creating a calculator design and functionalities for a working app involves several steps.
-                    Goal: Create a functional and user-friendly calculator app that can be used by anyone.
-                </p>
-            </div>
-            <div>
-                <img src="" title="Ass2" alt="assignment02">
-                <h2>Assignment 02</h2>
-                <p>
-                    Creating a calculator design and functionalities for a working app involves several steps.
-                    Goal: Create a functional and user-friendly calculator app that can be used by anyone.
-                </p>
-            </div>
-            <div>
-                <img src="" title="Ass3" alt="assignment03">
-                <h2>Assignment 03</h2>
-                <p>
-                    Creating a calculator design and functionalities for a working app involves several steps.
-                    Goal: Create a functional and user-friendly calculator app that can be used by anyone.
-                </p>
-            </div>
-            <h2 id="assignment">Assignments</h2>
+
+        <section id="Assignments">
+            <h4>Assignments</h4>
+            <article>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Card image">
+                    </div>
+                    <div class="card-content">
+                        <h5>Assignment 01</h5>
+                        <p>Change around the content for awesomeness.</p>
+                        <a href="#">Visit GitHub</a>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Card image">
+                    </div>
+                    <div class="card-content">
+                        <h5>Assignment 02</h5>
+                        <p>Change around the content for awesomeness.</p>
+                        <a href="#">Visit GitHub</a>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Card image">
+                    </div>
+                    <div class="card-content">
+                        <h5>Assignment 03</h5>
+                        <p>Change around the content for awesomeness.</p>
+                        <a href="#">Visit GitHub</a>
+                    </div>
+                </div>
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/300x200" alt="Card image">
+                    </div>
+                    <div class="card-content">
+                        <h5>Assignment 04</h5>
+                        <p>Change around the content for awesomeness.</p>
+                        <a href="#">Visit GitHub</a>
+                    </div>
+                </div>
+            </article>
         </section>
 
     </main>
-
-
 
     <!-- Contact Section -->
     <main id="Contact">
@@ -315,14 +338,14 @@
                     <p>Tel - +94704945424</p>
                 </div>
                 <div>
-                    <img src="./assets/images/social/img.png" title="socialImage" alt="socialImg">
-                    <img src="./assets/images/social/img_1.png" title="socialImage" alt="socialImg">
-                    <img src="./assets/images/social/img_2.png" title="socialImage" alt="socialImg">
-                    <img src="./assets/images/social/img_3.png" title="socialImage" alt="socialImg">
-                    <img src="./assets/images/social/img_4.png" title="socialImage" alt="socialImg">
-                    <img src="./assets/images/social/img_5.png" title="socialImage" alt="socialImg">
-                    <img src="./assets/images/social/img_6.png" title="socialImage" alt="socialImg">
-                    <img src="./assets/images/social/img_7.png" title="socialImage" alt="socialImg">
+                    <a href="https://github.com/chamithdilhara41" target="_blank"><img src="./assets/images/social/img.png" title="socialImage" alt="socialImg"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100032859543332&mibextid=ZbWKwL" target="_blank"><img src="./assets/images/social/img_1.png" title="socialImage" alt="socialImg"></a>
+                    <a href="https://x.com/Chamith_Dilhara?t=EdhjFK6neY8L7gEMRh8U9g&s=08 " target="_blank"><img src="./assets/images/social/img_2.png" title="socialImage" alt="socialImg"></a>
+                    <a href="https://www.instagram.com/dilhara_c._widisinghe?utm_source=qr&igsh=enoxeWJ0eDdmaWZh" target="_blank"><img src="./assets/images/social/img_3.png" title="socialImage" alt="socialImg"></a>
+                    <a href="https://www.linkedin.com/in/chamith-dilhara-248793205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./assets/images/social/img_4.png" title="socialImage" alt="socialImg"></a>
+                    <a href="https://youtube.com/@freedomwalker1672?si=bi0kXOYqarU2PiGH" target="_blank"><img src="./assets/images/social/img_5.png" title="socialImage" alt="socialImg"></a>
+                    <a href="https://www.tiktok.com/@dilhara_c._widisinghe?_t=8qOog4XI8UZ&_r=1" target="_blank"><img src="./assets/images/social/img_6.png" title="socialImage" alt="socialImg"></a>
+                    <a href="https://www.threads.net/@dilhara_c._widisinghe" target="_blank"><img src="./assets/images/social/img_7.png" title="socialImage" alt="socialImg"></a>
                 </div>
             </div>
     </section>
