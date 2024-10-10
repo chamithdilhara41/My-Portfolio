@@ -17,7 +17,7 @@ header{
     top: 0;
     width: 100%;
     background-color: black;
-    z-index: 999;
+    z-index: 10;
 }
 
 header>nav{
@@ -48,6 +48,38 @@ header>nav>div:nth-child(2)>ul>li>a{
 }
 header>nav>div:nth-child(2)>ul>li>a:hover{
     color: #08ba17;
+}
+
+#Home .squareDesign{
+    position: absolute;
+    background-image: url("/assets/images/squareDesign.png");
+    background-size: cover;
+    width: 260px;
+    height: 246px;
+    top: 30em;
+    left: 12em;
+    opacity: 60%;
+    z-index: -1;
+}
+#Home .dots{
+    background-image: url("/assets/images/dots.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 5em;
+    left: -1.5em;
+    z-index: -1;
+}
+#Home .blurSquare{
+    background-image: url("/assets/images/blurSquare.png");
+    background-size: cover;
+    width: 80px;
+    height: 150px;
+    position: absolute;
+    top: 25em;
+    right: 1em;
+    z-index: -1;
 }
 
 #Home {
