@@ -51,7 +51,19 @@ header>nav>div:nth-child(2)>ul>li>a{
 header>nav>div:nth-child(2)>ul>li>a:hover{
     color: #08ba17;
 }
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
 
+#check {
+    display: none;
+}
 #Home .squareDesign{
     position: absolute;
     background-image: url("/assets/images/squareDesign.png");
