@@ -16,6 +16,7 @@
 
     <!-- css applying link -->
     <link rel="stylesheet" href="./styles/styleIndex.css">
+    <link rel="stylesheet" href="./styles/response.css">
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -29,11 +30,24 @@
 <header>
     <nav class="navbar">
         <!-- logo -->
-        <div>
+        <div id="logo">
             <a href="#Home"><img src="assets/images/dilharaClogo.png" title="myLogo" alt="My-logo" ></a>
         </div>
+
         <!-- navigation -->
-        <div>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sider-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+        </label>
+
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sider-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </label>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -42,10 +56,6 @@
                 <li><a href="#works">Works</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
         </div>
     </nav>
 </header>
@@ -83,17 +93,18 @@
         <div class="blurSquare"></div>
         <div class="squareDesign"></div>
     </main>
-    <nav>
+
+    <!--<nav>
         <a href="#About"><button>See About</button></a>
     </nav>
 
-
-<!-- About Section -->
+    &lt;!&ndash; About Section &ndash;&gt;
     <main id="About">
         <h2>About</h2>
         <section data-aos="zoom-out-up" data-aos-duration="5000" id="AboutSec1">
             <img src="assets/images/aboutImg.png" title="aboutImage" alt="aboutImage">
         </section>
+
         <section data-aos="zoom-out-down" data-aos-duration="5000" id="AboutSec2">
             <p>Hello!</p>
             <p>I'm Chamith Dilhara,
@@ -112,56 +123,55 @@
         </section>
     </main>
 
-
-
-    <!-- Education Section -->
-    <main id="Education">
-        <h2>Education</h2>
-
-            <div id="circle"></div>
-            <div id="lineMid"></div>
-            <div id="line1"></div>
-            <div id="line2"></div>
-            <div id="line3"></div>
-            <div id="line4"></div>
-
-        <section id="ol">
-            <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                <h3>Ordinary Level</h3>
-                <article>
-                    I successfully passed all subjects in my O/L examinations also i studied Ananda Central Collage in Elpitiya.
-                </article>
+    &lt;!&ndash; Education Section &ndash;&gt;
+    <main>
+        <section id="Education">
+            <div>
+                <h2 class="subH">Education</h2>
             </div>
-        </section>
-        <section id="al">
-            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                <h3>Advanced Level</h3>
-                <article>
-                    Although I initially faced a challenge in my Advanced Level exams, failing in my first attempt, I persevered and passed on my second attempt with the following grades: S in Combined Maths, C in Physics, and C in ICT.
-                </article>
-            </div>
-        </section>
-        <section id="he">
-            <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                <h3>Higher Education</h3>
-                <article>
-                    I enrolled in the Institute of Software Engineering (IJSE) to pursue my degree and am committed to making the most of my career in this field.
-                </article>
-            </div>
-        </section>
-        <section id="other">
-            <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                <h3>Other qualifications</h3>
-                <article>
-                    I have completed an English course and earned a certificate.
-                </article>
-            </div>
+
+            <section class="timeLine">
+
+                <div class="container right-container">
+
+                    <div class="textBox" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <h4 class="topic"><span>Ordinary</span> Level</h4>
+                        <p>I successfully passed all subjects in my O/L examinations also i studied Ananda Central Collage in Elpitiya.</p>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+
+                <div class="container left-container">
+
+                    <div class="textBox" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <h4 class="topic"><span>Advanced</span> Level</h4>
+                        <p>Although I initially faced a challenge in my Advanced Level exams, failing in my first attempt, I persevered and passed on my second attempt with the following grades: S in Combined Maths, C in Physics, and C in ICT.</p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+
+                <div class="container right-container">
+
+                    <div class="textBox" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <h4 class="topic">Higher <span>Education</span></h4>
+                        <p>I enrolled in the Institute of Software Engineering (IJSE) to pursue my degree and am committed to making the most of my career in this field.</p>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+
+                <div class="container left-container">
+
+                    <div class="textBox" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <h3 class="topic"><span>Other</span> qualifications</h3>
+                        <p>I have completed an English course and earned a certificate.</p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
-
-
-    <!-- Skill Section -->
+    &lt;!&ndash; Skill Section &ndash;&gt;
     <main id="Skills">
         <h2>Skills</h2>
         <section>
@@ -189,9 +199,7 @@
         </section>
     </main>
 
-
-
-    <!-- Services Section -->
+    &lt;!&ndash; Services Section &ndash;&gt;
     <main id="Services">
         <h2>Services</h2>
         <section>
@@ -222,11 +230,11 @@
         </section>
     </main>
 
-    <!-- Works Section -->
+    &lt;!&ndash; Works Section &ndash;&gt;
     <main id="Works">
         <h3>Works</h3>
 
-        <!-- Project Section -->
+        &lt;!&ndash; Project Section &ndash;&gt;
         <section id="Projects">
             <h4>Projects</h4>
             <div data-aos="fade-right" class="card">
@@ -265,7 +273,7 @@
 
         </section>
 
-        <!-- Assignment Section -->
+        &lt;!&ndash; Assignment Section &ndash;&gt;
 
         <section id="Assignments">
             <h4>Assignments</h4>
@@ -315,7 +323,7 @@
 
     </main>
 
-    <!-- Contact Section -->
+    &lt;!&ndash; Contact Section &ndash;&gt;
     <main id="Contact">
         <h3>Contact</h3>
     <section>
@@ -359,12 +367,10 @@
         <button class="seeGallery">Do you want to see my Gallery ?</button>
     </main>
 
-
-
-    <!-- Gallery Section -->
+    &lt;!&ndash; Gallery Section &ndash;&gt;
     <main id="Gallery">
         <h2>Gallery</h2>
-        <section><!--data-aos="zoom-out" data-aos-duration="3000"-->
+        <section>&lt;!&ndash;data-aos="zoom-out" data-aos-duration="3000"&ndash;&gt;
             <img src="assets/gallery/photo11.jpg" alt="photo1">
 
             <img src="assets/gallery/photo10.jpg" alt="photo2">
@@ -377,17 +383,17 @@
 
             <img src="assets/gallery/photo2.png" alt="photo6">
 
-            <!--<img src="assets/gallery/photo8.jpg" alt="photo7">-->
+            &lt;!&ndash;<img src="assets/gallery/photo8.jpg" alt="photo7">&ndash;&gt;
 
-            <!--<img src="assets/gallery/photo7.jpg" alt="photo8">-->
+            &lt;!&ndash;<img src="assets/gallery/photo7.jpg" alt="photo8">&ndash;&gt;
 
-            <!--<img src="assets/gallery/photo9.jpg" alt="photo9">-->
+            &lt;!&ndash;<img src="assets/gallery/photo9.jpg" alt="photo9">&ndash;&gt;
 
-            <!--<img src="assets/gallery/photo10.jpg" alt="photo10">-->
+            &lt;!&ndash;<img src="assets/gallery/photo10.jpg" alt="photo10">&ndash;&gt;
 
         </section>
     </main>
-
+-->
 <footer>
     <p>Copyright @ dilhara C. - All rights reserved.</p>
 </footer>
