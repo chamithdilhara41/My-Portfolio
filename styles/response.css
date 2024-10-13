@@ -1,6 +1,6 @@
 
 /* Media query for screens with a maximum width of 350px */
-@media (max-width: 375px) {
+@media (max-width: 375px) and (max-width: 425px){
 
     body{
         overflow-x: hidden;
