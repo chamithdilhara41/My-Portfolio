@@ -1,6 +1,6 @@
 
 /* Media query for screens with a maximum width of 350px */
-@media (max-width: 375px) and (min-width: 425px){
+@media (max-width: 550px) and (min-width: 325px){
 
     body{
         overflow-x: hidden;
@@ -88,8 +88,6 @@
         align-items: start;
         text-align: right;
     }
-
-
 
     #Home section:nth-child(1)>div:first-child{
         display: none;
