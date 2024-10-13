@@ -3,7 +3,7 @@
 @media (max-width: 475px) and (min-width: 325px){
 
     body{
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     header{
