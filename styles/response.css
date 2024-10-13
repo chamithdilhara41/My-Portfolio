@@ -1,9 +1,9 @@
 
 /* Media query for screens with a maximum width of 350px */
-@media (max-width: 475px) and (min-width: 325px){
+@media (max-width: 425px) and (min-width: 320px){
 
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     header{
@@ -111,85 +111,4 @@
         margin-left: 0.8em;
     }
 
-   /* #Home section:nth-child(1) h1 {
-        font-size: 40px; !* Reduce font size *!
-    }
-
-    #Home section:nth-child(1) h2 {
-        font-size: 30px;
-    }
-
-    #Home section:nth-child(1) h3 {
-        font-size: 20px;
-    }
-
-    #Home img {
-        width: 300px; !* Reduce image size *!
-        height: 400px;
-    }
-
-    #About {
-        grid-template-columns: 1fr; !* Stack sections vertically *!
-    }
-
-    #About #AboutSec1>img {
-        width: 300px; !* Reduce image size *!
-        height: 400px;
-    }
-
-    #About>#AboutSec2 {
-        width: 100%; !* Make it full width *!
-    }
-
-    #About>#AboutSec2>p:nth-child(1) {
-        font-size: 30px; !* Reduce font size *!
-    }
-
-    #About>#AboutSec2>p:nth-child(2),
-    #About>#AboutSec2>p:nth-child(3) {
-        font-size: 15px; !* Adjust paragraph font size *!
-    }
-
-    #Education {
-        padding: 0 2%; !* Reduce padding *!
-    }
-
-    .container {
-        width: 100%; !* Full width for timeline containers *!
-    }
-
-    #Skills section>div:first-child {
-        grid-template-columns: repeat(3, 1fr); !* Stack skills into 3 columns *!
-    }
-
-    .item {
-        width: 100%; !* Full width for services and projects cards *!
-        height: auto;
-    }
-
-    #Projects .card,
-    #Assignments .card {
-        flex-direction: column; !* Stack image and text vertically *!
-        max-width: 100%;
-    }
-
-    #Projects .card-image,
-    #Assignments .card-image {
-        width: 100%; !* Full width for images *!
-        height: auto;
-    }
-
-    #Contact section {
-        grid-template-columns: 1fr; !* Stack contact sections vertically *!
-    }
-
-    #Contact #form div>input,
-    #Contact #form div>textarea {
-        width: 100%; !* Full width for input fields *!
-    }
-
-    #Contact #find>div:first-child {
-        width: 100%; !* Full width for contact info box *!
-        padding: 20px;
-    }*/
 }
