@@ -8,25 +8,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Sen:wght@400..800&family=Share:ital,wght@0,400;0,700;1,400;1,700&family=Syncopate:wght@400;700&display=swap');
 
-html {
+html{
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: black;
-    overflow-x: hidden;
     color: white;
+    background-color: black;
 }
-
-
 header{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: black;
     z-index: 10;
 }
-
 header>nav{
     display: flex;
     justify-content: space-around;
@@ -36,7 +32,6 @@ header>nav>div:first-child>a>img{
     width: 150px;   /* Converted from 150px = 7.8125vw */
     height: 30px;  /* Converted from 30px = 2.7778vh*/
 }
-
 header>nav>.links-container>ul>li{
     list-style: none;
     display: inline;
@@ -67,62 +62,39 @@ header>nav>.links-container>ul>li>a:hover{
     display: none;
 }
 
-#Home .squareDesign{
-    position: absolute;
-    background-image: url("/assets/images/squareDesign.png");
-    background-size: cover;
-    width: 260px;
-    height: 246px;
-    top: 30em;
-    left: 12em;
-    opacity: 60%;
-    z-index: -1;
-}
-#Home .dots{
-    background-image: url("/assets/images/dots.png");
-    background-size: cover;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 5em;
-    left: -1.5em;
-    z-index: -1;
-}
-#Home .blurSquare{
-    background-image: url("/assets/images/blurSquare.png");
-    background-size: cover;
-    width: 80px;
-    height: 150px;
-    position: absolute;
-    top: 25em;
-    right: 1em;
-    z-index: -1;
-}
-
-#Home {
-    margin-top: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100vw;
-    box-sizing: border-box;
+#Home{
+    margin-top: 8em;
     display: grid;
-    align-self: center;
     grid-template-columns: repeat(3, 1fr);
 }
 #Home section:nth-child(1){
     display: flex;
     justify-content: end;
-    align-items: start;
+    align-items: center;
     text-align: right;
-
+}
+#Home section:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+#Home section:nth-child(3){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#Home img{
+    width: 450px;
+    height: 570px;
+    border-radius: 50px;
+    align-items: center;
 }
 #Home section:nth-child(1)>div:first-child>h1{
     font-family: "Bakbak One", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 70px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     color: #08ba17;
 }
 #Home section:nth-child(1)>div:first-child>h2{
@@ -137,26 +109,6 @@ header>nav>.links-container>ul>li>a:hover{
     margin: 0;
     padding: 0;
     font-size: 35px;
-}
-/*#Home section:nth-child(1)>div:nth-child(2)>img{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}*/
-#Home section:nth-child(2){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#Home img{
-    width: 450px;
-    height: 570px;
-    border-radius: 50px;
-    align-items: center;
 }
 #Home section:nth-child(2)>h3{
     background-color: #08ba17;
@@ -204,6 +156,7 @@ header>nav>.links-container>ul>li>a:hover{
     margin: 0px;
     color:#08ba17 ;
 }
+
 body > nav {
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -224,155 +177,131 @@ body>nav>a>button:hover {
     background-color: #333; /* Darker background on hover */
 }
 
-/* About Styles */
-#About {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2,1fr);
+/*about*/
+#About{
+    position: relative;
 }
-
-#About #AboutSec1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#About>#AboutSec2{
-    width: 500px;
-    height: 600px;
-    margin-top: 5em;
-    text-align: left;
-}
-
 #About h2 {
-    position: absolute;
+    position: relative;
     font-size: 3em;
     font-family: 'Itim', cursive;
     font-style: normal;
     font-weight: bold;
     margin-left: 1.7em;
 }
-
-#About #AboutSec1>img{
-    margin-top: 7em;
+#details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#details #AboutSec1{
+    display: flex;
+    justify-content: center;
+}
+#details img{
+    border-radius: 40px;
     width: 450px;
     height: 550px;
-    border-radius: 2em;
-    margin-left: 8em;
 }
-#About>#AboutSec2>p:nth-child(1){
+#AboutSec2 div{
+    width: 600px;
+}
+#AboutSec2>div>p:nth-child(1){
     font-family: "Indie Flower", cursive;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 60px;
     font-style: normal;
     color: #08ba17;
+    margin-top: 0;
 }
 
-#About>#AboutSec2>p:nth-child(2){
+#AboutSec2>div>p:nth-child(2){
     font-family: "Inter", serif;
-    font-size: 20px;
+    font-size: 25px;
 }
-#About>#AboutSec2>p:nth-child(3){
+#AboutSec2>div>p:nth-child(3){
     font-family: "Inter", serif;
-    font-size: 20px;
+    font-size: 25px;
 }
-
-#About>#AboutSec2>button{
-    position: absolute;
-    font-family: "Sen", sans-serif;
-    font-weight: bolder;
-    font-style: normal;
-    margin-top: 50px;
-    color: white;
-    background-color:#08ba17 ;
-    padding: 13px 21px; /* Padding inside the button */
-    border: none; /* No border */
-    border-radius: 10px; /* Font style */
-    font-size: 20px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.5s ease;
-}
-
 
 /* Education styles */
-#Education{
+#Education {
     padding: 0 5%;
     position: relative;
     height: auto;
 }
-#Education .subH {
+
+#edu{
     position: relative;
     font-size: 3em;
     font-family: 'Itim', cursive;
     font-style: normal;
-    font-weight: bold;
     margin-left: 1.7em;
+    font-weight: bold;
 }
 
-.timeLine{
+.timeLine {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.container{
+.container {
     padding: 10px 50px;
     position: relative;
     width: 42%;
 }
 
-.textBox{
+.textBox {
     position: relative;
     padding: 10px 20px;
     border: 3px solid white;
     border-radius: 15px;
     font-size: 15px;
-    p{
-        font-size: 20px;
-        font-family: "Sen", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
 }
 
-.right-container{
+.textBox p {
+    font-size: 20px;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.right-container {
     left: 50%;
 }
 
-.left-container{
+.left-container {
     left: 0%;
 }
 
-.right-container .part-circle{
+.right-container .part-circle {
     left: -20px;
 }
 
-.part{
+.part {
     position: relative;
     top: -10px;
     left: 16px;
-
 }
 
-.left-container-arrow{
+.left-container-arrow,
+.right-container-arrow {
     width: 3em;
     position: absolute;
     top: 28px;
     z-index: 1;
     border: 3px solid white;
+}
+
+.left-container-arrow {
     right: -50px;
 }
 
-.right-container-arrow{
-    width: 3em;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border: 3px solid white;
+.right-container-arrow {
     left: -50px;
 }
 
-.timeLine::after{
+.timeLine::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -384,7 +313,7 @@ body>nav>a>button:hover {
     z-index: 0;
 }
 
-.topic{
+.topic {
     font-family: "Share", sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -392,19 +321,16 @@ body>nav>a>button:hover {
     display: inline-block;
     margin-bottom: 5px;
     margin-top: 5px;
-    span{
-        color: #08ba17;
-    }
-
 }
 
+.topic span {
+    color: #08ba17;
+}
 
-/* Skills Styles */
-
-#Skills {
+/*Skills*/
+#Skills{
     position: relative;
 }
-
 #Skills h2 {
     position: relative;
     font-size: 3em;
@@ -427,7 +353,11 @@ body>nav>a>button:hover {
     font-weight: bold;
     font-style: normal;
 }
-
+#Skills section>div>img{
+    width: 100px;
+    aspect-ratio: 1/1;
+    margin: 20px;
+}
 #Skills section>div>img{
     width: 100px;
     aspect-ratio: 1/1;
@@ -440,8 +370,7 @@ body>nav>a>button:hover {
     justify-content: center;
 }
 
-/* Services Styles*/
-
+/*services*/
 #Services{
     display: grid;
     align-items: center;
@@ -495,9 +424,10 @@ body>nav>a>button:hover {
     font-family: 'Itim', cursive;
     font-size: 15px;
 }
-
-/* Works Styles */
-
+/*works*/
+#Works{
+    position: relative;
+}
 #Works h3 {
     position: relative;
     font-size: 3em;
@@ -506,7 +436,6 @@ body>nav>a>button:hover {
     font-weight: bold;
     margin-left: 1.7em;
 }
-
 /* Projects Styles */
 #Projects h4{
     font-size: 35px;
@@ -634,7 +563,7 @@ body>nav>a>button:hover {
 
 #Assignments .card-content p {
     font-size: 1rem;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
@@ -651,6 +580,8 @@ body>nav>a>button:hover {
 #Assignments .card-content a:hover {
     background-color: #0056b3;
 }
+
+/*contact*/
 /* Contact Styles*/
 #Contact{
     position: relative;
@@ -761,8 +692,6 @@ body>nav>a>button:hover {
     }
 }
 #Contact .seeGallery{
-    position: relative;
-    left: 43em;
     background-color: #000;
     color: white;
     padding: 15px 25px;

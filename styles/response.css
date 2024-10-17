@@ -1,10 +1,8 @@
-
+body{
+    overflow-x: hidden;
+}
 /* Media query for screens with a maximum width of 350px */
-@media (max-width: 426px) and (min-width: 375px) {
-
-    body{
-        overflow-x: hidden;
-    }
+@media (max-width: 426px) and (min-width: 375px){
 
     header{
         height: 50px;
@@ -72,96 +70,266 @@
         background-color: rgba(255, 255, 255, 0.1);
     }
 
-    #Home {
-        margin-top: 100px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 100vw;
-        box-sizing: border-box;
-        display: grid;
-        align-self: center;
+    #Home{
+        margin-top: 1em;
+        height: 50em;
         grid-template-columns: repeat(1, 1fr);
     }
     #Home section:nth-child(1){
+        display: none;
+    }
+    #Home section:nth-child(2){
         display: flex;
         justify-content: center;
-        align-items: start;
-        text-align: right;
+        margin-top: 5em;
     }
-
-    #Home section:nth-child(1)>div:first-child{
-        display: none;
+    #Home img{
+        width: 350px;
+        height: 450px;
     }
-    #Home section:nth-child(3)>div>article{
-        display: none;
+    #Home section:nth-child(3){
+        display: flex;
+        justify-content: center;
+        article{
+            display: none;
+        }
     }
-    #Home section:nth-child(3)>div>h3{
+    /*about*/
+    #About {
+        margin-top: 5em;
+    }
+    #About h2 {
+        font-size: 2.5em;
         margin-left: 1em;
     }
-
-    #Home section:nth-child(3)>div>h3:nth-child(2){
-        margin-left: 3em;
+    #details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #details img{
+        width: 350px;
+        height: 450px;
+    }
+    #AboutSec2 {
+        display: flex;
+        justify-content: center;
+    }
+    #AboutSec2 div{
+        width: 350px;
+    }
+    #AboutSec2>div>p:nth-child(1){
+        margin-top: 1em;
+        margin-bottom: 0;
+        font-size: 50px;
     }
 
-    #Home section:nth-child(3)>div>h2{
-        margin-top: 20px;
+    #AboutSec2>div>p:nth-child(2){
+        font-size: 15px;
+    }
+    #AboutSec2>div>p:nth-child(3){
+        font-size: 15px;
+    }
+    /*education*/
+    #edu  {
+        font-size: 2.5em;
         margin-left: 1em;
     }
-    #Home section:nth-child(3)>div>h3:last-child{
-        margin-left: 0.8em;
+    .container {
+        padding: 5px 10px;
     }
 
-    /* about */
-    #About{
+    .textBox {
+        padding: 8px 15px;
+    }
+
+    .textBox p {
+        font-size: 16px;
+    }
+
+    .topic {
+        font-size: 1em;
+    }
+    .left-container-arrow{
+        right: -20px;
+        width: 15px;
+    }
+    .right-container-arrow{
+        left: -10px;
+        width: 5px;
+    }
+    /*skills*/
+    #Skills section{
+        grid-template-rows: repeat(1,1fr);
+    }
+    #Skills h2 {
+        font-size: 2.5em;
+        margin-left: 1em;
+    }
+    #Skills section>div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    /*services*/
+    #Services h2 {
+        font-size: 2.5em;
+        margin-left: 1em;
+    }
+    #Services section{
+        height: fit-content;
+        justify-items: center;
+        row-gap: 2em;
         grid-template-columns: repeat(1,1fr);
     }
-    #About>#AboutSec2{
-        display: grid;
-        margin-left: 3.5em;
-        width: 400px;
-        height: auto;
+    .item{
+        width: 250px;
+        height: 370px;
     }
-    #About #AboutSec1>img{
-        margin-top: 7em;
-        width: 450px;
-        height: 550px;
-        border-radius: 2em;
-        margin-left: 1.6em;
-    }
-    #About>#AboutSec2>p:nth-child(1){
-        margin: 0;
-    }
-    #About>#AboutSec2>p:nth-child(2){
-        margin: 0;
-    }
-    #About>#AboutSec2>p:nth-child(3){
-        margin-bottom: 0;
-    }
-    #About h2{
+    /*works*/
+    #Works h3 {
         font-size: 2.5em;
-        margin-bottom: 0;
         margin-left: 1em;
     }
-    #About>#AboutSec2>button{
-        position: relative;
-        width: 200px;
-        margin-top: 50px;
+    #Projects .card {
+        max-width: 350px;
+    }
+    /* Card text section */
+    #Projects .card-content {
+        padding: 20px;
+        flex: 1;
+    }
+
+    #Projects .card-content h5 {
+        font-size: 1rem;
+    }
+
+    #Projects .card-content p {
+        font-size: 0.7rem;
+    }
+
+    #Projects .card-content a {
+        font-size: 0.7rem;
+    }
+
+    /*assignments*/
+    #Assignments article{
+        display: grid;
+        justify-items: center;
+        row-gap: 1em;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #Assignments .card {
+        display: flex;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #363636;
+        max-width: 350px;
+        max-height: 150px;
+    }
+
+    #Assignments .card-content h5 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    #Assignments .card-content p {
+        font-size: 0.8rem;
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+
+    #Assignments .card-content a {
+        display: inline-block;
+        padding: 8px 15px;
+        text-decoration: none;
         color: white;
-        background-color:#08ba17 ;
-        padding: 13px 21px; /* Padding inside the button */
-        border: none; /* No border */
-        border-radius: 10px; /* Font style */
-        font-size: 20px; /* Font size */
-        cursor: pointer; /* Pointer cursor on hover */
-        transition: background-color 0.5s ease;
+        background-color: #007bff;
+        border-radius: 5px;
+        font-size: 0.7rem;
+    }
+
+    /*contact*/
+    #Contact h3{
+        font-size: 2.5em;
+        margin-left: 1em;
+    }
+    #Contact section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #Contact #form div>input,textarea{
+        margin-left: 0;
+    }
+    #Contact #form div>textarea{
+        width: 300px;
+    }
+    #Contact #find>div:first-child{
+        h2{
+            font-size: 40px;
+            margin-top: 0;
+        }
+        p{
+            font-size: 17px;
+            margin-top: 0;
+        }
+        background-color: #034108;
+        width: 320px;
+        height: 170px;
+        padding: 20px;
+    }
+    /*gallery*/
+    #Gallery h2{
+        font-size: 2.5em;
+        margin-left: 1em;
+    }
+
+    #Gallery section>img:nth-child(1){
+        position: relative;
+        width: 50%;
+        left: 12%;
+    }
+    #Gallery section>img:nth-child(2){
+        position: relative;
+        width: 48%;
+        left: 12%;
+    }
+    #Gallery section>img:nth-child(3){
+        position: absolute;
+        width: 30%;
+        left: 60%;
+    }
+    #Gallery section>img:nth-child(4){
+        position: relative;
+        width: 35.5%;
+        left: 12%;
+        top: 0;
+    }
+    #Gallery section>img:nth-child(5){
+        position: absolute;
+        height: 16%;
+        top: 84%;
+        left: 48%;
+    }
+
+    #Gallery section>img:nth-child(6){
+        position: absolute;
+        height: 37%;
+        top: 46.5%;
+        left: 53.5%;
+        z-index: -1;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+
+        p{
+            margin-top: 3em;
+            font-size: 1em;
+        }
     }
 
 }
 
-@media (max-width: 768px) and (min-width: 427px) {
-    body{
-        overflow-x: hidden;
-    }
+@media (max-width: 768px) and (min-width: 427px){
 
     header{
         height: 50px;
@@ -229,90 +397,205 @@
         background-color: rgba(255, 255, 255, 0.1);
     }
 
-    #Home {
-        margin-top: 100px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 100vw;
-        box-sizing: border-box;
-        display: grid;
-        align-self: center;
+    #Home{
+        margin-top: 1em;
+        height: 50em;
         grid-template-columns: repeat(1, 1fr);
     }
     #Home section:nth-child(1){
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        text-align: right;
-    }
-
-    #Home section:nth-child(1){
-        display: grid;
         position: absolute;
-        top: 43.5em;
+        display: flex;
+        width: fit-content;
+        justify-content: end;
+        top: 47em;
         left: 3em;
     }
-    #Home section:nth-child(3)>div>article{
-        display: none;
+    #Home section:nth-child(2){
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
     }
-    #Home section:nth-child(3)>div>h3{
-        margin-left: 12em;
+    #Home section:nth-child(3){
+        position: relative;
+        width: fit-content;
+        left: 23em;
+        article{
+            display: none;
+        }
     }
-
-    #Home section:nth-child(3)>div>h3:nth-child(2){
-        margin-left: 11em;
+    #Home img{
+        width: 450px;
+        height: 600px;
     }
-
-    #Home section:nth-child(3)>div>h2{
-        margin-top: 20px;
-        margin-left: 10em;
-    }
-    #Home section:nth-child(3)>div>h3:last-child{
-        margin-left: 8em;
-    }
-
     /*about*/
     #About{
+        margin-top: 15em;
+    }
+    #details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #AboutSec2 {
+        display: flex;
+        justify-content: center;
+    }
+    #AboutSec2 div{
+        width: 600px;
+    }
+    #AboutSec2>div>p:nth-child(1){
+        margin-top: 1em;
+        margin-bottom: 0;
+        font-size: 50px;
+    }
+
+    #AboutSec2>div>p:nth-child(2){
+        font-size: 18px;
+    }
+    #AboutSec2>div>p:nth-child(3){
+        font-size: 18px;
+    }
+    /*education*/
+    #edu  {
+        font-size: 3em;
+        margin-left: 1.5em;
+    }
+    #Education {
+        padding: 0 2%;
+    }
+
+    /* Stack containers vertically */
+    .container {
+        width: fit-content;
+        padding: 10px 20px;
+    }
+
+    /* Center the text boxes */
+    .right-container, .left-container {
+        left: 0%;
+    }
+
+    /* Remove timeline line for small screens */
+    .timeLine::after {
+        display: none;
+    }
+
+    /* Adjust arrows for small screens */
+    .left-container-arrow, .right-container-arrow {
+        display: none;
+    }
+
+    /* Adjust font sizes for small screens */
+
+    .textBox {
+        font-size: 14px;
+    }
+
+    .textBox p {
+        font-size: 18px;
+    }
+
+    .topic {
+        font-size: 1.2em;
+    }
+    /*skills*/
+    #Skills section{
+        grid-template-rows: repeat(1,1fr);
+    }
+    #Skills h2 {
+        font-size: 3em;
+        margin-left: 1.5em;
+    }
+    #Skills section>div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+    /*services*/
+
+    #Services h2 {
+        font-size: 3em;
+        margin-left: 1.5em;
+    }
+    #Services section{
+        height: fit-content;
+        justify-items: center;
+        row-gap: 2em;
         grid-template-columns: repeat(1,1fr);
     }
-    #About>#AboutSec2{
-        display: grid;
-        margin-left: 3.5em;
-        width: 650px;
-        height: auto;
-    }
-    #About #AboutSec1>img{
-        margin-top: 7em;
+    .item{
         width: 450px;
-        height: 550px;
-        border-radius: 2em;
-        margin-left: 1.6em;
+        height: 270px;
     }
-    #About>#AboutSec2>p:nth-child(1){
-        margin: 0;
-    }
-    #About>#AboutSec2>p:nth-child(2){
-        margin: 0;
-    }
-    #About>#AboutSec2>p:nth-child(3){
-        margin-bottom: 0;
-    }
-    #About h2{
+
+    /*works*/
+    #Works h3 {
         font-size: 3em;
-        margin-bottom: 0;
-        margin-left: 1em;
+        margin-left: 1.5em;
     }
-    #About>#AboutSec2>button{
-        position: relative;
-        width: 200px;
-        margin-top: 50px;
-        color: white;
-        background-color:#08ba17 ;
-        padding: 13px 21px; /* Padding inside the button */
-        border: none; /* No border */
-        border-radius: 10px; /* Font style */
-        font-size: 20px; /* Font size */
-        cursor: pointer; /* Pointer cursor on hover */
-        transition: background-color 0.5s ease;
+    #Projects .card {
+        max-width: 600px;
+    }
+
+    /*assignments*/
+    #Assignments article{
+        row-gap: 1em;
+        column-gap: 1em;
+    }
+    #Assignments .card {
+        display: flex;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #363636;
+        max-width: 350px;
+    }
+
+    #Assignments .card-content h5 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    #Assignments .card-content p {
+        font-size: 0.8rem;
+    }
+
+    #Assignments .card-content a {
+        display: inline-block;
+        padding: 8px 15px;
+        text-decoration: none;
+        font-size: 0.7rem;
+    }
+    /*contact*/
+    #Contact section{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /*gallery*/
+
+    #Gallery h2{
+        font-size: 3em;
+        margin-left: 1.5em;
+    }
+
+    #Gallery section>img:nth-child(5){
+        position: absolute;
+        height: 40%;
+        top: 56%;
+        left: 37%;
+    }
+
+    #Gallery section>img:nth-child(6){
+        position: absolute;
+        height: 40%;
+        top: 56%;
+        left: 71.5%;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+
+        p{
+            margin-top: 3em;
+            font-size: 1em;
+        }
     }
 }
