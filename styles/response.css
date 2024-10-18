@@ -599,3 +599,72 @@ body{
         }
     }
 }
+@media (max-width: 1024px) and (min-width: 770px){
+    /*home*/
+    #Home img{
+        width: 400px;
+        height: 520px;
+    }
+    #Home section:nth-child(3)>div>article{
+        width: 280px;
+    }
+    #Home section:nth-child(1)>div:first-child>h1{
+        font-size: 60px;
+    }
+    #Home section:nth-child(1)>div:first-child>h2{
+        font-size: 40px;
+    }
+    #Home section:nth-child(1)>div:first-child>h3{
+        font-size: 25px;
+    }
+
+    #Home section:nth-child(3)>div>h3:first-child{
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    #Home section:nth-child(3)>div>h3:nth-child(2){
+        font-size: 26px;
+    }
+    #Home section:nth-child(3)>div>article{
+        font-size: 20px;
+    }
+    #Home section:nth-child(3)>div>h2{
+        font-size: 40px;
+    }
+    #Home section:nth-child(3)>div>h3:last-child{
+        font-size: 42px;
+    }
+    /*about*/
+    #details img{
+        width: 400px;
+        height: 520px;
+    }
+    #AboutSec2 div{
+        width: 450px;
+    }
+    #AboutSec2>div>p:nth-child(1){
+        font-size: 50px;
+    }
+
+    #AboutSec2>div>p:nth-child(2){
+        font-size: 20px;
+    }
+    #AboutSec2>div>p:nth-child(3){
+        font-size: 20px;
+    }
+    /*education*/
+    .left-container-arrow{
+        right: -25px;
+        width: 20px;
+    }
+    /*skills*/
+    #Skills section{
+        grid-template-rows: repeat(1,1fr);
+    }
+    #Skills section>div{
+        display: grid;
+        gap: 3em;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+}
