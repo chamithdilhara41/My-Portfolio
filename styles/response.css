@@ -477,6 +477,32 @@ body{
         font-size: 15px;
     }
 
+    /*education*/
+    #edu  {
+        font-size: 2.5em;
+        margin-left: 1em;
+    }
+    .container {
+        padding: 5px 10px;
+    }
+    .textBox {
+        padding: 8px 15px;
+    }
+    .textBox p {
+        font-size: 16px;
+    }
+    .topic {
+        font-size: 1em;
+    }
+    .left-container-arrow{
+        right: -20px;
+        width: 15px;
+    }
+    .right-container-arrow{
+        left: -10px;
+        width: 5px;
+    }
+
 
 
 }
