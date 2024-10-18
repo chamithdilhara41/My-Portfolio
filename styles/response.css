@@ -503,6 +503,35 @@ body{
         width: 5px;
     }
 
+    /*skills*/
+    #Skills section{
+        grid-template-rows: repeat(1,1fr);
+    }
+    #Skills h2 {
+        font-size: 2.5em;
+        margin-left: 1em;
+    }
+    #Skills section>div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    /*services*/
+    #Services h2 {
+        font-size: 2.5em;
+        margin-left: 1em;
+    }
+    #Services section{
+        height: fit-content;
+        justify-items: center;
+        row-gap: 2em;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .item{
+        width: 250px;
+        height: 370px;
+    }
 
 
 }
