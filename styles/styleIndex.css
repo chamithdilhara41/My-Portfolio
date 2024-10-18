@@ -737,6 +737,12 @@ body>nav>a>button:hover {
     display: grid;
     justify-content: center;
 }
+#Gallery section>img{
+    transition: transform 0.3s ease-in-out;
+}
+#Gallery section>img:hover{
+    transform: scale(1.1);
+}
 #Gallery section>img:nth-child(1){
     position: relative;
     width: 25%;
