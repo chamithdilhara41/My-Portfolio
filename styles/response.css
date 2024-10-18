@@ -110,8 +110,8 @@ body{
             display: none;
         }
     }
-    /*about*/
 
+    /*about*/
     #About h2 {
         font-size: 2.5em;
         margin-left: 1em;
@@ -142,6 +142,7 @@ body{
     #AboutSec2>div>p:nth-child(3){
         font-size: 15px;
     }
+
     /*education*/
     #edu  {
         font-size: 2.5em;
@@ -170,6 +171,7 @@ body{
         left: -10px;
         width: 5px;
     }
+
     /*skills*/
     #Skills section{
         grid-template-rows: repeat(1,1fr);
@@ -183,6 +185,7 @@ body{
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
+
     /*services*/
     #Services h2 {
         font-size: 2.5em;
@@ -198,6 +201,7 @@ body{
         width: 250px;
         height: 370px;
     }
+
     /*works*/
     #Works h3 {
         font-size: 2.5em;
@@ -293,6 +297,7 @@ body{
         height: 170px;
         padding: 20px;
     }
+
     /*gallery*/
     #Gallery h2{
         font-size: 2.5em;
@@ -345,6 +350,7 @@ body{
     }
 
 }
+
 @media (max-width: 426px) and (min-width: 375px){
 
     header{
@@ -471,6 +477,7 @@ body{
     #AboutSec2>div>p:nth-child(3){
         font-size: 15px;
     }
+
     /*education*/
     #edu  {
         font-size: 2.5em;
@@ -499,6 +506,7 @@ body{
         left: -10px;
         width: 5px;
     }
+
     /*skills*/
     #Skills section{
         grid-template-rows: repeat(1,1fr);
@@ -512,6 +520,7 @@ body{
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
+
     /*services*/
     #Services h2 {
         font-size: 2.5em;
@@ -527,6 +536,7 @@ body{
         width: 250px;
         height: 370px;
     }
+
     /*works*/
     #Works h3 {
         font-size: 2.5em;
@@ -619,6 +629,7 @@ body{
         height: 170px;
         padding: 20px;
     }
+
     /*gallery*/
     #Gallery h2{
         font-size: 2.5em;
@@ -770,6 +781,7 @@ body{
         width: 450px;
         height: 600px;
     }
+
     /*about*/
     #About{
         margin-top: 15em;
@@ -796,6 +808,7 @@ body{
     #AboutSec2>div>p:nth-child(3){
         font-size: 18px;
     }
+
     /*education*/
     #edu  {
         font-size: 3em;
@@ -839,6 +852,7 @@ body{
     .topic {
         font-size: 1.2em;
     }
+
     /*skills*/
     #Skills section{
         grid-template-rows: repeat(1,1fr);
@@ -852,8 +866,8 @@ body{
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
     }
-    /*services*/
 
+    /*services*/
     #Services h2 {
         font-size: 3em;
         margin-left: 1.5em;
@@ -907,13 +921,13 @@ body{
         text-decoration: none;
         font-size: 0.7rem;
     }
+
     /*contact*/
     #Contact section{
         grid-template-columns: repeat(1,1fr);
     }
 
     /*gallery*/
-
     #Gallery h2{
         font-size: 3em;
         margin-left: 1.5em;
@@ -943,6 +957,7 @@ body{
     }
 }
 @media (max-width: 1024px) and (min-width: 770px){
+
     /*home*/
     #Home img{
         width: 400px;
@@ -977,6 +992,7 @@ body{
     #Home section:nth-child(3)>div>h3:last-child{
         font-size: 42px;
     }
+
     /*about*/
     #details img{
         width: 400px;
@@ -995,11 +1011,13 @@ body{
     #AboutSec2>div>p:nth-child(3){
         font-size: 20px;
     }
+
     /*education*/
     .left-container-arrow{
         right: -25px;
         width: 20px;
     }
+
     /*skills*/
     #Skills section{
         grid-template-rows: repeat(1,1fr);
