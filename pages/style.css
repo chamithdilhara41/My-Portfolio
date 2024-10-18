@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    color: #ffffff; /* White text for title */
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1c1c1c; /* Dark card background */
+    border: 1px solid #333; /* Slight border for visibility */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dark shadow */
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff; /* White text for card titles */
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #cccccc; /* Light gray for description text */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.code-btn {
+    background-color: #4CAF50; /* Green */
+}
+
+.run-btn {
+    background-color: #FF5722FF; /* Blue */
+}
+
+.view-btn {
+    background-color: #2f71e8; /* Orange */
+}
+
+button:hover {
+    opacity: 0.9;
+    background-color: #000000; /* Black button hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}

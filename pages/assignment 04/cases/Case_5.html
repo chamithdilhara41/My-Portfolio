@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        main{
+            width: 50vw;
+            height: 50vh;
+            border: 5px solid red;
+            overflow: hidden;
+        }
+
+        section{
+            display: flex;
+            width: fit-content;
+            animation: animation-slide 5s infinite alternate;
+        }
+        div{
+            width: 50vw;
+            height: 50vh;
+        }
+
+        section>div:first-child{
+            background: url("images/slide1.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(2){
+            background: url("images/slide2.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(3){
+            background: url("images/slide3.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section>div:nth-child(4){
+            background: url("images/slide4.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        @keyframes animation-slide {
+            0%{
+                transform: translateX(0%);
+            }
+            25%{
+                transform: translateX(-25%);
+            }
+            50%{
+                transform: translateX(-50%);
+            }
+            75%,100% {
+                transform: translateX(-75%);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+
+</body>
+</html>

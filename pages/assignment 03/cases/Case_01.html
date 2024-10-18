@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+    <style>
+        body{
+            /*overflow-x: hidden;*/
+            /*overflow-y: hidden;*/
+            overflow: hidden;
+        }
+        main>section:nth-child(1){
+            width: 50vw;
+            height: 50vh;
+            aspect-ratio: 1/1;
+            background-color: red;
+            left: 0;
+            top: 0;
+            margin: auto;
+            position: absolute;
+        }
+        main>section:nth-child(2){
+            width: 50vw;
+            height: 50vh;
+            top: 0;
+            right: 0;
+            margin: auto;
+            aspect-ratio: 1/1;
+            background-color: green;
+            position: absolute;
+        }main>section:nth-child(3){
+             width: 50vw;
+             height: 50vh;
+             aspect-ratio: 1/1;
+             background-color: gold;
+             bottom: 0;
+             left: 0;
+             margin: auto;
+             position: absolute;
+         }
+        main>section:nth-child(4){
+            width: 50vw;
+            height: 50vh;
+            aspect-ratio: 1/1;
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+        main>section:nth-child(1)>div:nth-child(1){
+            background-color: white;
+            width: 30%;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            left: -50px;
+            top: -50px;
+            margin: auto;
+            position: absolute;
+
+        }
+        main>section>div{
+            width: 15vw;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        main>section>div>div{
+            width: 5vw;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .corner{
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            position: absolute;
+            border-radius: 100%;
+        }
+        #corner1{
+            top: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+        #corner2{
+            top: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+        #corner3{
+            left: 0;
+            right: 0;
+            top: calc(-15vw/2);
+            margin: auto;
+        }
+        #corner4{
+            bottom: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+        #corner5{
+            bottom: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+        #corner6{
+            bottom: calc(-15vw/2);
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        section:last-child{
+            width: 15vw;
+            aspect-ratio: 1/1;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: white;
+            position: absolute;
+        }
+        section:last-child>div{
+            width: 8vw;
+            aspect-ratio: 1/1;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <div id="corner1" class="corner"></div>
+    <div id="corner2" class="corner"></div>
+    <div id="corner3" class="corner"></div>
+    <div id="corner4" class="corner"></div>
+    <div id="corner5" class="corner"></div>
+    <div id="corner6" class="corner"></div>
+
+    <section>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>

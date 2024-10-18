@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./normalize.css">
+
+    <style>
+
+        /*body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        section{
+            width:100%;
+            height: 45vw;
+        }
+
+        div{
+            width: 150px;
+            height: 70px;
+            border-radius: 10%;
+            background-color: goldenrod;
+            animation-name: my-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+
+
+        }
+
+        @keyframes my-animation {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+
+
+            }
+            25% {
+                margin-left: 0;
+                margin-top: 39vw;
+                transform: rotate(360deg);
+
+
+            }
+            50% {
+                margin-left: 87%;
+                margin-top: 39vw;
+
+
+            }
+            75% {
+                margin-left: 87%;
+                margin-top: 0;
+
+
+
+            }
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+
+
+            }
+        }*/
+
+        body{
+            overflow: hidden;
+        }
+
+        div{
+            width: 150px;
+            height: 100px;
+            background-color: darkblue;
+            border-radius: 10px;
+            animation: my-animation 3s infinite alternate;
+        }
+        @keyframes my-animation {
+            0%{
+                margin-left: 0;
+                margin-top: 0;
+            }
+            25%{
+                background-color: deeppink;
+                margin-left: calc(100vw - 150px);
+                margin-top: 0;
+                transform: rotate(180deg);
+            }
+            50%{
+                background-color: mediumspringgreen;
+                margin-left: calc(100vw - 150px);
+                margin-top: calc(100vh - 80px);
+                transform: rotate(0deg);
+            }
+            75%{
+                background-color: red;
+                margin-left: 0;
+                margin-top: calc(100vh - 80px);
+                transform: rotate(-180deg);
+            }
+            /*100%{
+
+            }*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>

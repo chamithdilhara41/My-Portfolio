@@ -538,6 +538,7 @@ body>nav>a>button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #363636;
     max-width: 550px;
+    height: fit-content;
 }
 /* Card image section */
 #Assignments .card-image {
