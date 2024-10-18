@@ -593,6 +593,36 @@ body{
         font-size: 0.7rem;
     }
 
+    /*contact*/
+    #Contact h3{
+        font-size: 2.5em;
+        margin-left: 1em;
+    }
+    #Contact section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #Contact #form div>input,textarea{
+        margin-left: 0;
+    }
+    #Contact #form div>textarea{
+        width: 300px;
+    }
+    #Contact #find>div:first-child{
+        h2{
+            font-size: 40px;
+            margin-top: 0;
+        }
+        p{
+            font-size: 17px;
+            margin-top: 0;
+        }
+        background-color: #034108;
+        width: 320px;
+        height: 170px;
+        padding: 20px;
+    }
+
+
 
 
 }
