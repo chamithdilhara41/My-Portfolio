@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section{
+            display: flex;
+            position: absolute;
+        }
+        section:nth-child(2){
+            position: absolute;
+            top: 25em;
+            left: 6em;
+        }
+        section>div{
+            width: 50px;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+            align-items: center;
+        }
+        section:nth-child(3){
+            position: absolute;
+            left: 54em;
+            top: 15em;
+            height: 450px;
+        }
+        section:nth-child(1){
+            display: flex;
+            top: 30em;
+            transform: scaleX(-1);
+            position: absolute;
+            height: 110px;
+        }
+    </style>
+</head>
+
+<body>
+<section>
+    <img src="./images/walking-businessman.gif" alt="">
+    <img src="./images/walking-businessman.gif" alt="">
+    <img src="./images/walking-businessman.gif" alt="">
+    <img src="./images/walking-businessman.gif" alt="">
+    <img src="./images/walking-businessman.gif" alt="">
+    <img src="./images/walking-businessman.gif" alt="">
+</section>
+<section>
+    <div><h1>A</h1></div>
+    <div><h1>B</h1></div>
+    <div><h1>C</h1></div>
+    <div><h1>D</h1></div>
+    <div><h1>E</h1></div>
+    <div><h1>F</h1></div>
+</section>
+<section>
+    <img src="./images/houseDay.gif" alt="">
+</section>
+<script>
+    let arr =["A","B","C","D","E","F"];
+    setInterval(()=>{
+        let last_value = arr.pop();
+        arr.unshift(last_value)
+        console.log(arr)
+        document.getElementsByTagName("h1")[0].innerText = arr[0];
+        document.getElementsByTagName("h1")[1].innerText = arr[1];
+        document.getElementsByTagName("h1")[2].innerText = arr[2];
+        document.getElementsByTagName("h1")[3].innerText = arr[3];
+        document.getElementsByTagName("h1")[4].innerText = arr[4];
+        document.getElementsByTagName("h1")[5].innerText = arr[5];
+    },3000)
+</script>
+</body>
+</html>
