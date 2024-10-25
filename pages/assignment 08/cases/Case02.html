@@ -30,6 +30,12 @@
             position: relative;
             bottom: -10em;
         }
+        button{
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -42,20 +48,30 @@
     <div></div>
     <div id="last"></div>
 </section>
+<p>
+    <button id="start">Start</button>
+    <br>
+    <br>
+    <button id="stop">Stop</button>
+</p>
 
 </body>
 <script>
     let arr =["red","blue","yellow","pink","purple","black"];
-    setInterval(()=>{
-        let last_value = arr.pop();
-        arr.unshift(last_value)
-        console.log(arr)
-        document.getElementsByTagName("div")[0].style.background = arr[0];
-        document.getElementsByTagName("div")[1].style.background = arr[1];
-        document.getElementsByTagName("div")[2].style.background = arr[2];
-        document.getElementsByTagName("div")[3].style.background = arr[3];
-        document.getElementsByTagName("div")[4].style.background = arr[4];
-        document.getElementsByTagName("div")[5].style.background = arr[5];
-    },3000)
+    var interval;
+    document.getElementById("start").addEventListener("click", function () {
+        interval = setInterval(()=>{
+            let last_value = arr.pop();
+            arr.unshift(last_value)
+            console.log(arr)
+            for (let i = 0; i < arr.length; i++) {
+                document.getElementsByTagName("div")[i].style.background = arr[i];
+            }
+        },2000)
+    })
+    document.getElementById("stop").addEventListener("click", function () {
+        clearInterval(interval);
+    })
+
 </script>
 </html>
