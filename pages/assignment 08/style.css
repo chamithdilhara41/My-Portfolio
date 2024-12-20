@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b2b2b;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    width: 300px;
+    background-color: #1d1d1d;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#view {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 80px;
+    border-bottom: 2px solid #444;
+    position: relative;
+}
+
+#view h3 {
+    flex-grow: 1;
+    text-align: right;
+    margin: 0;
+    font-size: 2em;
+}
+
+.clear {
+    background-color: #e53935;
+    color: #fff;
+    font-size: 2em;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.2s;
+}
+
+.clear:hover {
+    background-color: #ff4444;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    padding: 1px;
+    background-color: #333;
+}
+
+button {
+    background-color: #444;
+    border: none;
+    color: #ddd;
+    font-size: 1.5em;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:nth-child(4n) {
+    background-color: #666;
+}
+
+button:nth-child(4n):hover {
+    background-color: #777;
+}
+
+button:nth-last-child(6) {
+    background-color: #1e88e5;
+    color: #fff;
+}
+
+button:nth-last-child(2) {
+    background-color: #e53935;
+    color: #fff;
+}
+
+button:nth-last-child(6):hover {
+    background-color: #42a5f5;
+}
